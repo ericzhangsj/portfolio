@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eric's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+</head>
+<body>
+    
+
+    <div class="intro">
+        <h1 class="logo-intro-header">
+            <span class="logo-intro">EZ</span><span class="logo-intro">SJ.</span>
+        </h1>
+    </div>
+
+
+    <header class="header">
+        
+        <a href="#" class="logo"><span>EZSJ.</span></a>
+
+        <ul class="nav-links">
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <button class="visit-btn">Visit Github</button>
+
+
+    </header>
+
+    <section id="about" class="about">
+        <div class="about-container">
+            <img src="me-potrait.png" alt="">
+
+            <div class="info-box">
+                <div class="text">
+                    <h3>Hi, I'm</h3>
+                    <h1>(Eric)</h1>
+                    <h1>Zhang Shao Jun</h1> 
+                    <h3> </h3>
+                    <span>ISE & Data Science</span>
+                </div>
+                    
+                <div class="btn-group">
+                    <a href="resume.pdf" download="Eric_Zhang_Resume.pdf" class="btn"> Download Resume </a>
+                    <a href="#contact" class="btn"> Contact </a>
+                </div>
+
+                <!--
+                <div class="socials">
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+                -->
+
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <h2 class="section-title">Experiences</h2>
+
+        <div class="experience-info">
+            <div class="grid">
+                <a href="#ml-project" class="card-link">
+                    <div class="grid-card" data-tilt data-tilt-reverse="true">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Machine Learning & AI</span>
+                        <h4>2 Years</h4>
+                        <p>Worked with various tools 
+                            in the past 3 years, especially after taking 2 ML-related 
+                            courses and an internship involving OCR.
+                        </p>
+                    </div>
+                </a>
+                
+                <div class="grid-card" data-tilt data-tilt-reverse="true">
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                    <span>Data Analytics & Engineering</span>
+                    <h4>2 Years</h4>
+                    <p>Plenty of data-cleaning and analysis have been 
+                        done in R/Python, and even dashboards like Tableau or Power BI.
+                    </p>
+                </div>
+                
+                <a href="#flexsim" class = "card-link">
+                    <div class="grid-card" data-tilt data-tilt-reverse="true">
+                        
+                        <i class="fa-solid fa-box"></i>
+                        <span>Simulation & Optimization</span>
+                        <h4>3 Years</h4>
+                        <p>As a primary major of Systems Engineering, worked on plenty of tools 
+                            focusing on linear optimization and operations research.
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2 class="section-title">Personal Projects</h2>
+        
+
+        <div id="flexsim" class="project-card" data-tilt data-tilt-reverse="true" data-tilt-max="4">
+            <video autoplay loop muted playsinline poster="project-2.png">
+                <source src="flexsim.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="project-body">
+                <div>
+                    <p class="project-category">Simulation Projects</p>
+                    <h3 class="project-title">Multiple Warehouse Simulations with FlexSim</h3>
+                    <p class="project-desc">
+                     Utilizing FlexSim’s discrete-event simulation capabilities, 
+                     I developed a (minature) scaled model of warehouse operations featuring racking systems,
+                     AGVs (Automated Guided Vehicles), and personnel. 
+                     By simulating material flow, I successfully identified operational bottlenecks 
+                     and optimized resource allocation within a controlled environment.  
+                    </p>
+                </div>
+                <div>
+                    <p class="tag-label">Tools Used </p>
+                    <div class="tags">
+                        <span>FlexSim</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                <div class="project-card" data-tilt data-tilt-reverse="true" data-tilt-max="4">
+            <img src="project-z.png" alt="Wafer Defect Classification">
+            <div class="project-body">
+                <div>
+                    <p class="project-category">WEB-APP/DATABASE PROJECT</p>
+                    <h3 class="project-title">Social Media Web-App</h3>
+                    <p class="project-desc">
+                     I built a simple web-app that imitates a social media site such as twitter/reddit, using 
+                     HTML and CSS for the frontend, and Python's Flask framework for the backend. 
+                     The user can create and delete an account,
+                     make posts, like & dislike posts, as well as leave comments.
+                     Hence, this project also boasts a SQLite database, utilizing sqalchemy to maintain data 
+                     integrity across the web-app, and storing data such as user accounts
+                     and posts.
+
+                     
+                    </p>
+                </div>
+                <div>
+                    <p class="tag-label">Languages/Libraries Used </p>
+                    <div class="tags">
+                        <span>CSS</span>
+                        <span>HTML</span>
+                        <span>Flask (Python)</span>
+                        <span>SQLalchemy</span>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <a href="https://github.com/ericzhangsj/projectz" class="btn"> 
+                        <i class="fa-brands fa-github"></i> 
+                        View GitHub Page
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" data-tilt data-tilt-reverse="true" data-tilt-max="4">
+            <img src="portfolio.png" alt="Wafer Defect Classification">
+            <div class="project-body">
+                <div>
+                    <p class="project-category">WEB DESIGN PROJECT</p>
+                    <h3 class="project-title">Personal Portfolio (No AI)</h3>
+                    <p class="project-desc">
+                     A hand-coded personal showcase built with vanilla web technologies. 
+                     This website is built to train my ability to translate design concepts into functional code, 
+                     focusing on semantic HTML and custom CSS styling without the use of automated shortcuts.
+                    
+                    
+                    </p>
+                </div>
+                <div>
+                    <p class="tag-label">Languages Used </p>
+                    <div class="tags">
+                        <span>CSS</span>
+                        <span>HTML</span>
+                        <span>Javascript</span>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <a href="https://github.com/ericzhangsj" class="btn"> 
+                        <i class="fa-brands fa-github"></i> 
+                        View GitHub Page
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div id="ml-project" class="project-card" data-tilt data-tilt-reverse="true" data-tilt-max="4">
+            <img src="wafer-defect.png" alt="">
+            <div class="project-body">
+                <div>
+                    <p class="project-category">Machine Learning Project</p>
+                    <h3 class="project-title">Wafer Defect Classification with Deep Learning</h3>
+                    <p class="project-desc">
+                        Engineered a multi-layer CNN featuring convolutional "scanners" for feature extraction to correctly identify multi-class wafer defects from 52x52 wafer maps, 
+                        implementing a robust training pipeline using Cross-Entropy Loss and the Adam optimizer that achieved 98.1% classification accuracy across 8 distinct defect categories including 
+                        Edge-Ring, Donut, and Center defects on unseen test data.</p>
+                </div>
+                <div>
+                    <p class="tag-label">Libraries used</p>
+                    <div class="tags">
+                        <span>NumPy & Pandas</span>
+                        <span>PyTorch</span>
+                        <span>scikit-learn</span>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <a href="https://github.com/ericzhangsj/waferdefectclassification" class="btn"> 
+                        <i class="fa-brands fa-github"></i> 
+                        View GitHub Page
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="input-box">
+            <h2 class="section-title">Contact Me</h2>
+
+            <div class="input">
+                <input type="text" placeholder="currently not working">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+
+            <!-- <div class="btn">Submit</div> -->
+        </div>
+
+        <div class="contact-details">
+            <p>or you can find me at the following:</p>
+            <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <h3>+65 8189 6271</h3>
+            </div>
+            <div class="contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <h3>ericzhangsj@gmail.com</h3>
+            </div>
+            <div class="contact-item">
+                <h3>e1122514@u.nus.edu</h3>
+            </div>
+            
+            
+        </div>
+    </section>
+    
+    <footer>
+        <ul>
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+
+        <p class="copyright">© All Rights Reserved | Eric Zhang</p>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+</body>
+</html>
